@@ -1,0 +1,31 @@
+machine:
+  environment:
+    DOCKER_ORG: grovo
+  services:
+    - docker
+  php:
+    version: 7.0.4
+
+dependencies:
+  pre:
+    - composer config -g github-oauth.github.com $GITHUB_TOKEN
+  override:
+    - composer install --no-interaction --prefer-dist
+
+test:
+  pre:
+    - mkdir -p $CIRCLE_TEST_REPORTS/phpunit
+    - mkdir -p $CIRCLE_ARTIFACTS/{xml,html}
+  override:
+    - |
+      phpdbg -qrr \
+      vendor/bin/phpunit -v \
+      --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml \
+      --coverage-clover $CIRCLE_ARTIFACTS/xml/clover.xml \
+      --coverage-html $CIRCLE_ARTIFACTS/html
+  post:
+    # codecov
+    - |
+      bash <(curl -s https://codecov.io/bash) \
+      -f $CIRCLE_ARTIFACTS/xml/clover.xml \
+      -t $CODECOV_TOKEN
