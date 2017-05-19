@@ -2,5 +2,5 @@
 <ruleset name="Extended Ruleset for Project">
   <exclude-pattern>*/tests/*</exclude-pattern>
   <exclude-pattern>src/Validation/Validator.php</exclude-pattern>
-  <rule ref="./vendor/GrovoLearning/php-code-rules/phpcs-windows.xml"/>
+  <rule ref="./vendor/GrovoLearning/php-code-rules/phpcs.xml"/>
 </ruleset>
