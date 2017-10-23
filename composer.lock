@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ba3e2ab6072178c579314dab8f4d4d9e",
+    "content-hash": "973fba68663ca6113b820a19b68783d9",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -284,48 +284,6 @@
     ],
     "packages-dev": [
         {
-            "name": "bernardosilva/git-hooks-installer-plugin",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/BernardoSilva/git-hooks-installer-plugin.git",
-                "reference": "a07b872ea38b5008bde98ef8ed07ffb5ceab6397"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/BernardoSilva/git-hooks-installer-plugin/zipball/a07b872ea38b5008bde98ef8ed07ffb5ceab6397",
-                "reference": "a07b872ea38b5008bde98ef8ed07ffb5ceab6397",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "~1.0"
-            },
-            "require-dev": {
-                "composer/composer": "~1.0@dev",
-                "phpunit/phpunit": "^4.8"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "BernardoSilva\\GitHooksInstallerPlugin\\Composer\\Plugin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "BernardoSilva\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Bernardo Silva",
-                    "email": "benny.stuff@gmail.com"
-                }
-            ],
-            "time": "2016-05-10T15:24:06+00:00"
-        },
-        {
             "name": "doctrine/instantiator",
             "version": "1.0.5",
             "source": {
@@ -378,73 +336,6 @@
                 "instantiate"
             ],
             "time": "2015-06-14T21:17:01+00:00"
-        },
-        {
-            "name": "grovolearning/git-hooks-php",
-            "version": "v1.0.2",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:GrovoLearning/git-hooks-php.git",
-                "reference": "ae6050dca2cc6b0f9cfa25eff660489c29d9b464"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/GrovoLearning/git-hooks-php/zipball/ae6050dca2cc6b0f9cfa25eff660489c29d9b464",
-                "reference": "ae6050dca2cc6b0f9cfa25eff660489c29d9b464",
-                "shasum": ""
-            },
-            "require": {
-                "bernardosilva/git-hooks-installer-plugin": "~1.0",
-                "grovolearning/php-code-rules": "~0.1.0",
-                "squizlabs/php_codesniffer": "~2.3"
-            },
-            "type": "git-hook",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Alesandro Ortiz",
-                    "email": "aortiz@grovo.com"
-                }
-            ],
-            "homepage": "https://github.com/GrovoLearning/git-hooks-php",
-            "support": {
-                "source": "https://github.com/GrovoLearning/git-hooks-php/tree/v1.0.2",
-                "issues": "https://github.com/GrovoLearning/git-hooks-php/issues"
-            },
-            "time": "2016-05-13T22:06:06+00:00"
-        },
-        {
-            "name": "grovolearning/php-code-rules",
-            "version": "v0.1.1",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:GrovoLearning/php-code-rules.git",
-                "reference": "4a4c6d659c18787d56a9370d6699485f8783d2a1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/GrovoLearning/php-code-rules/zipball/4a4c6d659c18787d56a9370d6699485f8783d2a1",
-                "reference": "4a4c6d659c18787d56a9370d6699485f8783d2a1",
-                "shasum": ""
-            },
-            "type": "library",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Alesandro Ortiz",
-                    "email": "aortiz@grovo.com"
-                }
-            ],
-            "homepage": "https://github.com/GrovoLearning/php-code-rules",
-            "support": {
-                "source": "https://github.com/GrovoLearning/php-code-rules/tree/v0.1.1",
-                "issues": "https://github.com/GrovoLearning/php-code-rules/issues"
-            },
-            "time": "2016-07-19T14:57:35+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -1750,84 +1641,6 @@
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
             "time": "2016-10-03T07:35:21+00:00"
-        },
-        {
-            "name": "squizlabs/php_codesniffer",
-            "version": "2.9.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "f7dfecbee89d68ab475a6c9e17d22bc9b69aed97"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/f7dfecbee89d68ab475a6c9e17d22bc9b69aed97",
-                "reference": "f7dfecbee89d68ab475a6c9e17d22bc9b69aed97",
-                "shasum": ""
-            },
-            "require": {
-                "ext-simplexml": "*",
-                "ext-tokenizer": "*",
-                "ext-xmlwriter": "*",
-                "php": ">=5.1.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0"
-            },
-            "bin": [
-                "scripts/phpcs",
-                "scripts/phpcbf"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.x-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "CodeSniffer.php",
-                    "CodeSniffer/CLI.php",
-                    "CodeSniffer/Exception.php",
-                    "CodeSniffer/File.php",
-                    "CodeSniffer/Fixer.php",
-                    "CodeSniffer/Report.php",
-                    "CodeSniffer/Reporting.php",
-                    "CodeSniffer/Sniff.php",
-                    "CodeSniffer/Tokens.php",
-                    "CodeSniffer/Reports/",
-                    "CodeSniffer/Tokenizers/",
-                    "CodeSniffer/DocGenerators/",
-                    "CodeSniffer/Standards/AbstractPatternSniff.php",
-                    "CodeSniffer/Standards/AbstractScopeSniff.php",
-                    "CodeSniffer/Standards/AbstractVariableSniff.php",
-                    "CodeSniffer/Standards/IncorrectPatternException.php",
-                    "CodeSniffer/Standards/Generic/Sniffs/",
-                    "CodeSniffer/Standards/MySource/Sniffs/",
-                    "CodeSniffer/Standards/PEAR/Sniffs/",
-                    "CodeSniffer/Standards/PSR1/Sniffs/",
-                    "CodeSniffer/Standards/PSR2/Sniffs/",
-                    "CodeSniffer/Standards/Squiz/Sniffs/",
-                    "CodeSniffer/Standards/Zend/Sniffs/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Greg Sherwood",
-                    "role": "lead"
-                }
-            ],
-            "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
-            "homepage": "http://www.squizlabs.com/php-codesniffer",
-            "keywords": [
-                "phpcs",
-                "standards"
-            ],
-            "time": "2017-05-03T23:30:39+00:00"
         },
         {
             "name": "theseer/tokenizer",
