@@ -12,23 +12,12 @@
             "Grovo\\AssetTranscoder\\Tests\\": "tests/"
         }
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url":  "git@github.com:GrovoLearning/git-hooks-php.git"
-        },
-        {
-            "type": "vcs",
-            "url":  "git@github.com:GrovoLearning/php-code-rules.git"
-        }
-    ],
     "require": {
         "php": ">=7",
         "psr/log": "^1.0",
         "guzzlehttp/guzzle": "^6.2"
     },
     "require-dev": {
-        "grovolearning/git-hooks-php": "^1.0",
         "phpunit/phpunit": "6.1"
     }
 }

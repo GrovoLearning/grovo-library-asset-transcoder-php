@@ -1,14 +1,8 @@
 machine:
-  environment:
-    DOCKER_ORG: grovo
-  services:
-    - docker
   php:
     version: 7.0.4
 
 dependencies:
-  pre:
-    - composer config -g github-oauth.github.com $GITHUB_TOKEN
   override:
     - composer install --no-interaction --prefer-dist
 
